@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_head"
+    tools:context=".ui.WindActivity">
+
+    <ImageView
+        android:id="@+id/logon_wind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_28"
+        android:layout_marginTop="@dimen/dp_28"
+        android:src="@mipmap/logon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/left_wind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_28"
+        android:layout_marginTop="@dimen/dp_188"
+        android:src="@mipmap/noneworking"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/top_wind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_50"
+        android:src="@mipmap/toplogomo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/auto_wind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/mm_03"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/left_wind"
+        app:layout_constraintTop_toBottomOf="@+id/top_wind" />
+
+    <TextView
+        android:id="@+id/auto_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AUTO"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/dp_14"
+        app:layout_constraintBottom_toBottomOf="@+id/auto_wind"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/auto_wind"
+        app:layout_constraintTop_toTopOf="@+id/auto_wind" />
+
+    <TextView
+        android:id="@+id/auto_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="@dimen/dp_370"
+        android:text="DHC will only be ON if ROOM Temperature is higher than Set point and Fireplace is ON"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dp_14"
+        app:layout_constraintBottom_toBottomOf="@+id/auto_wind"
+        app:layout_constraintTop_toTopOf="@+id/auto_wind"
+        app:layout_constraintStart_toEndOf="@+id/auto_title"
+        android:layout_marginLeft="@dimen/dp_100"/>
+
+    <ImageView
+        android:id="@+id/manual_wind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/rr_03"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/left_wind"
+        app:layout_constraintTop_toBottomOf="@+id/auto_wind" />
+
+    <TextView
+        android:id="@+id/manual_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MANUAL"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/dp_14"
+        app:layout_constraintBottom_toBottomOf="@+id/manual_wind"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/manual_wind"
+        app:layout_constraintTop_toTopOf="@+id/manual_wind" />
+
+    <TextView
+        android:id="@+id/manual_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="@dimen/dp_300"
+        android:text="DHC will be continuously ON"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dp_14"
+        app:layout_constraintBottom_toBottomOf="@+id/manual_wind"
+        app:layout_constraintTop_toTopOf="@+id/manual_wind"
+        app:layout_constraintStart_toEndOf="@+id/auto_title"
+        android:layout_marginLeft="@dimen/dp_100"/>
+
+    <ImageView
+        android:id="@+id/off_wind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/rr_03"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/left_wind"
+        app:layout_constraintTop_toBottomOf="@+id/manual_wind" />
+
+    <TextView
+        android:id="@+id/off_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OFF"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/dp_14"
+        app:layout_constraintBottom_toBottomOf="@+id/off_wind"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/off_wind"
+        app:layout_constraintTop_toTopOf="@+id/off_wind" />
+
+    <TextView
+        android:id="@+id/off_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="@dimen/dp_300"
+        android:text="DHC will always be OFF"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dp_14"
+        app:layout_constraintBottom_toBottomOf="@+id/off_wind"
+        app:layout_constraintTop_toTopOf="@+id/off_wind"
+        app:layout_constraintStart_toEndOf="@+id/off_title"
+        android:layout_marginLeft="@dimen/dp_100"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/dp_365" />
+
+    <Button
+        android:id="@+id/back_wind"
+        android:layout_width="@dimen/dp_27"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginRight="@dimen/dp_29"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:background="@mipmap/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

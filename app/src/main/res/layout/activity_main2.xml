@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Main2Activity"
+    android:background="@color/backgroud">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="@dimen/dp_29"
+        android:layout_marginLeft="@dimen/dp_34"
+        android:src="@mipmap/logon"
+        android:id="@+id/logon_head"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="@dimen/dp_34"
+        android:src="@mipmap/noneworking"
+        app:layout_constraintTop_toBottomOf="@+id/logon_head"
+        android:layout_marginTop="@dimen/dp_142"
+        android:id="@+id/working_head"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/working_head"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="@dimen/dp_29"
+        android:background="@mipmap/fanbtnbg"
+        android:layout_marginTop="@dimen/dp_73"
+        android:id="@+id/set_head"
+        android:text="Fan       MANUAL"
+        android:textColor="@android:color/white"
+        android:drawableRight="@mipmap/triangle"
+        android:paddingRight="@dimen/dp_10"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/set_head"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="@dimen/dp_29"
+        android:background="@mipmap/menubtn"
+        android:layout_marginTop="@dimen/dp_22"
+        android:text="MENU"
+        android:textColor="@android:color/white"
+        android:id="@+id/menu_head"
+        android:layout_marginBottom="@dimen/dp_10"/>
+
+    <!--<TextView
+        android:layout_width="@dimen/dp_282"
+        android:layout_height="@dimen/dp_282"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@mipmap/bigheating"
+        android:layout_marginTop="@dimen/dp_87"
+        android:textSize="@dimen/dp_150"
+        android:text="76"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/big_head"/>-->
+
+    <ImageView
+        android:id="@+id/big_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/heating_big"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/dp_87"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/big_head"
+        app:layout_constraintBottom_toBottomOf="@+id/big_head"
+        app:layout_constraintRight_toRightOf="@+id/big_head"
+        app:layout_constraintLeft_toLeftOf="@+id/big_head"
+        android:text="78"
+        android:textColor="#EAEEF3"
+        android:textSize="@dimen/dp_80"
+        android:id="@+id/num_head"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/num_head"
+        app:layout_constraintLeft_toRightOf="@+id/num_head"
+        android:textSize="@dimen/dp_24"
+        android:textColor="#FFFFFF"
+        android:text="℉"
+        android:id="@+id/unit_head"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@mipmap/small_heat"
+        android:layout_marginRight="@dimen/dp_25"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="65"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:textSize="@dimen/dp_28"
+        android:id="@+id/smll_head"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="@+id/smll_head"
+        app:layout_constraintLeft_toLeftOf="@+id/smll_head"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/dp_76"
+        android:background="@mipmap/downc"
+        android:id="@+id/up_head"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="@+id/smll_head"
+        app:layout_constraintLeft_toLeftOf="@+id/smll_head"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/dp_76"
+        android:background="@mipmap/upc"
+        android:id="@+id/down_head" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="@+id/smll_head"
+        app:layout_constraintLeft_toLeftOf="@+id/smll_head"
+        app:layout_constraintTop_toBottomOf="@id/up_head"
+        android:src="@mipmap/downo"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="@+id/smll_head"
+        app:layout_constraintLeft_toLeftOf="@+id/smll_head"
+        app:layout_constraintBottom_toTopOf="@+id/down_head"
+        android:layout_marginTop="@dimen/dp_143"
+        android:src="@mipmap/upo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/smll_head"
+        android:text="Set to"
+        android:textColor="@color/textColor_head"
+        android:textSize="@dimen/dp_18"
+        android:layout_margin="@dimen/dp_1_5"
+        android:id="@+id/show_head"/>
+
+</android.support.constraint.ConstraintLayout>

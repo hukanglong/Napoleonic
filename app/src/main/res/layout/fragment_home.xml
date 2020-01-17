@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.HomeFragment"
+    android:background="@color/back_head">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp_500"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/linebg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="@dimen/dp_28"
+        android:layout_marginTop="@dimen/dp_8"
+        android:visibility="visible"
+        android:id="@+id/home_ling_menu">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Display Degrees"
+            android:textSize="@dimen/dp_14"
+            android:textColor="@color/textColor_line_menu"
+            android:layout_marginLeft="@dimen/dp_28"
+            android:visibility="visible"
+            android:id="@+id/title_home_menu"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/fc"
+            android:id="@+id/group_home_frag"
+            android:orientation="horizontal"
+            android:layout_marginRight="@dimen/dp_50">
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:text="Fahrenheit"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dp_14"
+                android:gravity="center"
+                android:id="@+id/fc_home_frag"/>
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:text="Celcius"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dp_14"
+                android:gravity="center"
+                android:id="@+id/cf_home_frag"/>
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

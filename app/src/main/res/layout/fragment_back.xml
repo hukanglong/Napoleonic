@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.BackFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="@dimen/dp_20"
+        android:id="@+id/lin_back">
+
+        <TextView
+            android:id="@+id/tv_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/slide_show"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+
+        <com.example.napolun2.customview.IndicatorSeekBar
+            android:layout_width="@dimen/dp_522"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:minHeight="@dimen/dp_10"
+            android:maxHeight="@dimen/dp_10"
+            android:thumb="@mipmap/slide_pin"
+            android:id="@+id/seekbar_back"
+            android:progress="50"
+            android:progressDrawable="@drawable/seekbar" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/lin_back"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="0%"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp_14"
+        android:id="@+id/zero_back"
+        android:layout_marginTop="@dimen/dp_10"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/lin_back"
+        app:layout_constraintRight_toRightOf="@+id/lin_back"
+        android:text="100%"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp_14"
+        android:layout_marginTop="@dimen/dp_10"/>
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/zero_back"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="当前亮度：50%"
+        android:textSize="@dimen/dp_16"
+        android:textColor="@color/textColor_option"
+        android:layout_marginTop="@dimen/dp_10"
+        android:id="@+id/show_back"/>-->
+
+</android.support.constraint.ConstraintLayout>

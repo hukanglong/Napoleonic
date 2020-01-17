@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.TempFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temp Setting lower limit"
+        android:textColor="@color/textColor_option"
+        android:textSize="@dimen/dp_14"
+        android:layout_marginTop="@dimen/dp_53"
+        android:layout_marginLeft="@dimen/dp_33"
+        android:id="@+id/text_temp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_112"
+        android:background="@mipmap/btn_bg"
+        android:src="@mipmap/minus_ok"
+        android:id="@+id/minus_temp"
+        android:layout_marginTop="@dimen/dp_90"/>
+
+    <TextView
+        android:id="@+id/num_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="248dp"
+        android:layout_marginLeft="248dp"
+        android:layout_marginTop="86dp"
+        android:text="5 ℃"
+        android:textColor="@color/textColor_option"
+        android:textSize="@dimen/dp_24" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/minus_temp"
+        android:layout_marginLeft="@dimen/dp_112"
+        android:background="@mipmap/btn_bg"
+        android:src="@mipmap/add_ok"
+        android:id="@+id/add_temp"
+        android:layout_marginTop="@dimen/dp_90"/>
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.AutoFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_auto"
+        android:textColor="@color/textColor_option"
+        android:textSize="@dimen/dp_14"
+        android:id="@+id/title_auto"
+        android:layout_margin="@dimen/dp_20"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/title_auto"
+        android:layout_margin="@dimen/dp_20"
+        android:id="@+id/lin_auto">
+
+        <TextView
+            android:id="@+id/tv_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/slide_show"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+
+        <com.example.napolun2.customview.IndicatorSeekBar
+            android:layout_width="@dimen/dp_522"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_fan"
+            android:max="600"
+            android:minHeight="@dimen/dp_10"
+            android:maxHeight="@dimen/dp_10"
+            android:thumb="@mipmap/slide_pin"
+            android:id="@+id/seekbar_auto"
+            android:progress="300"
+            android:progressDrawable="@drawable/seekbar" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0s"
+        android:textSize="@dimen/dp_14"
+        android:textColor="@color/white"
+        android:layout_below="@id/lin_auto"
+        android:layout_alignLeft="@+id/lin_auto"
+        android:id="@+id/plan_auto"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="600s"
+        android:textSize="@dimen/dp_14"
+        android:textColor="@color/white"
+        android:layout_below="@id/lin_auto"
+        android:layout_toRightOf="@+id/lin_auto"/>
+
+</RelativeLayout>

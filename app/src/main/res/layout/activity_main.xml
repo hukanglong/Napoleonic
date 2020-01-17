@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/backgroud">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:src="@mipmap/logo"
+        android:layout_marginTop="@dimen/dp_32"
+        android:layout_marginLeft="@dimen/dp_40"
+        android:id="@+id/logon_main"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/state_main"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/logon_main"
+        android:text="Heat on"
+        android:textSize="@dimen/dp_20"
+        android:textColor="@color/checked"
+        android:layout_marginLeft="@dimen/dp_24"/>
+
+    <ImageView
+        android:id="@+id/temp_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/blue_y"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/dp_83"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/temp_main"
+        app:layout_constraintBottom_toBottomOf="@+id/temp_main"
+        app:layout_constraintRight_toRightOf="@+id/temp_main"
+        app:layout_constraintLeft_toLeftOf="@+id/temp_main"
+        android:text="78"
+        android:textColor="#EAEEF3"
+        android:textSize="@dimen/dp_80"
+        android:id="@+id/num_main"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/num_main"
+        app:layout_constraintLeft_toRightOf="@+id/num_main"
+        android:textSize="@dimen/dp_24"
+        android:textColor="#FFFFFF"
+        android:text="℉"
+        android:id="@+id/unit_mian"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/num_main"
+        app:layout_constraintRight_toRightOf="@+id/temp_main"
+        app:layout_constraintLeft_toLeftOf="@+id/temp_main"
+        android:text="45%"
+        android:textColor="#EAEEF3"
+        android:textSize="@dimen/dp_16"
+        android:drawableLeft="@mipmap/humi"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/group_main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@mipmap/m0"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="Mode   [HEAT]"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dp_16"
+            android:id="@+id/mode_main"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp_40"/>
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="FAN   [AUTO]"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dp_16"
+            android:id="@+id/fan_main"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp_40"/>
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="   SCHEDULE"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dp_16"
+            android:id="@+id/schedule_main"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp_40"/>
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="         SET"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dp_16"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp_40"
+            android:id="@+id/set_main"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/temp_main"
+        app:layout_constraintBottom_toBottomOf="@+id/temp_main"
+        app:layout_constraintLeft_toRightOf="@+id/temp_main"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:textSize="@dimen/dp_14"
+        android:textColor="#8C8C8C"
+        android:text="Set to"
+        android:id="@+id/setto_main"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/temp_main"
+        app:layout_constraintBottom_toBottomOf="@+id/temp_main"
+        app:layout_constraintLeft_toRightOf="@+id/setto_main"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:background="@mipmap/small_cool"
+        android:text="72"
+        android:textSize="@dimen/dp_14"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:id="@+id/settemp_main"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@+id/settemp_main"
+        app:layout_constraintRight_toRightOf="@id/settemp_main"
+        app:layout_constraintTop_toTopOf="@+id/temp_main"
+        app:layout_constraintBottom_toBottomOf="@+id/temp_main"
+        android:src="@mipmap/spotted"
+        android:id="@+id/dot_main"/>
+
+    <Button
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="@dimen/dp_24"
+        app:layout_constraintLeft_toLeftOf="@+id/settemp_main"
+        app:layout_constraintRight_toRightOf="@id/settemp_main"
+        app:layout_constraintBottom_toTopOf="@+id/dot_main"
+        android:background="@mipmap/up_d"
+        android:id="@+id/up_main"/>
+
+    <Button
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="@dimen/dp_24"
+        app:layout_constraintLeft_toLeftOf="@+id/settemp_main"
+        app:layout_constraintRight_toRightOf="@id/settemp_main"
+        app:layout_constraintTop_toBottomOf="@+id/dot_main"
+        android:background="@mipmap/minus_d"
+        android:id="@+id/down_main"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/dp_24"
+        android:layout_marginRight="@dimen/dp_24"
+        android:text="am"
+        android:textSize="@dimen/dp_18"
+        android:textColor="@color/incanus"
+        android:id="@+id/am_main"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/time_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:text="12:30"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp_24"
+        app:layout_constraintRight_toLeftOf="@+id/am_main"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wed | Nov 24,2018"
+        android:textColor="@color/incanus"
+        android:textSize="@dimen/dp_18"
+        app:layout_constraintTop_toBottomOf="@+id/am_main"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/dp_11"
+        android:layout_marginRight="@dimen/dp_24"
+        android:id="@+id/date_main"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/schedule1"
+        app:layout_constraintTop_toBottomOf="@id/date_main"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_18"
+        android:id="@+id/dateimg_main"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_main"
+        android:textSize="@dimen/dp_16"
+        android:textColor="@color/incanus"
+        app:layout_constraintTop_toBottomOf="@id/date_main"
+        app:layout_constraintRight_toLeftOf="@+id/dateimg_main"
+        android:layout_margin="@dimen/dp_10"/>
+
+</android.support.constraint.ConstraintLayout>

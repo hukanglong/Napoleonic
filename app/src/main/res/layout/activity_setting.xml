@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SettingActivity"
+    android:background="@color/backgroud">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@color/cardview_dark_background"
+        android:id="@+id/scr_setting"
+        android:scrollbars="none"
+        android:paddingTop="@dimen/dp_47">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/group_setting"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/btn_option"
+                android:id="@+id/btn11_setting"
+                android:checked="true"
+                android:button="@null"
+                android:textColor="@color/btn_color_option"
+                android:textSize="@dimen/dp_12"
+                android:text="System Type"
+                android:gravity="center"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/btn_option"
+                android:id="@+id/btn12_setting"
+                android:button="@null"
+                android:textColor="@color/btn_color_option"
+                android:textSize="@dimen/dp_12"
+                android:text="℃/℉"
+                android:gravity="center"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/btn_option"
+                android:id="@+id/btn13_setting"
+                android:button="@null"
+                android:textColor="@color/btn_color_option"
+                android:textSize="@dimen/dp_12"
+                android:text="Date &amp; time"
+                android:gravity="center"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/btn_option"
+                android:id="@+id/btn14_setting"
+                android:button="@null"
+                android:textColor="@color/btn_color_option"
+                android:textSize="@dimen/dp_12"
+                android:text="Brightness"
+                android:gravity="center"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/btn_option"
+                android:id="@+id/btn15_setting"
+                android:button="@null"
+                android:textColor="@color/btn_color_option"
+                android:textSize="@dimen/dp_12"
+                android:text="Auto lock time"
+                android:gravity="center"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/btn_option"
+                android:id="@+id/btn16_setting"
+                android:button="@null"
+                android:textColor="@color/btn_color_option"
+                android:textSize="@dimen/dp_12"
+                android:text="Filter reminder"
+                android:gravity="center"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/btn_option"
+                android:id="@+id/btn17_setting"
+                android:button="@null"
+                android:textColor="@color/btn_color_option"
+                android:textSize="@dimen/dp_12"
+                android:text="Humidification"
+                android:gravity="center"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/btn_option"
+                android:id="@+id/btn18_setting"
+                android:button="@null"
+                android:textColor="@color/btn_color_option"
+                android:textSize="@dimen/dp_12"
+                android:text="Temprature Callbration"
+                android:gravity="center"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/btn_option"
+                android:id="@+id/btn19_setting"
+                android:button="@null"
+                android:textColor="@color/btn_color_option"
+                android:textSize="@dimen/dp_12"
+                android:text="Temp Setting upper limit"
+                android:gravity="center"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/btn_option"
+                android:id="@+id/btn1_setting"
+                android:button="@null"
+                android:textColor="@color/btn_color_option"
+                android:textSize="@dimen/dp_12"
+                android:text="Temp setting lower limit"
+                android:gravity="center"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/btn_option"
+                android:id="@+id/btn2_setting"
+                android:button="@null"
+                android:textColor="@color/btn_color_option"
+                android:textSize="@dimen/dp_12"
+                android:text="Compressor Delay"
+                android:gravity="center"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/btn_option"
+                android:id="@+id/btn3_setting"
+                android:button="@null"
+                android:textColor="@color/btn_color_option"
+                android:textSize="@dimen/dp_12"
+                android:text="Test Settings"
+                android:gravity="center"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/btn_option"
+                android:id="@+id/btn4_setting"
+                android:button="@null"
+                android:textColor="@color/btn_color_option"
+                android:textSize="@dimen/dp_12"
+                android:text="Clean screen"
+                android:gravity="center"/>
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/btn_option"
+                android:id="@+id/btn5_setting"
+                android:button="@null"
+                android:textColor="@color/btn_color_option"
+                android:textSize="@dimen/dp_12"
+                android:text="Reset to factory default"
+                android:gravity="center"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/btn_option"
+                android:id="@+id/btn6_setting"
+                android:button="@null"
+                android:textColor="@color/btn_color_option"
+                android:textSize="@dimen/dp_12"
+                android:text="Technical support"
+                android:gravity="center"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/btn_option"
+                android:id="@+id/btn7_setting"
+                android:button="@null"
+                android:textColor="@color/btn_color_option"
+                android:textSize="@dimen/dp_12"
+                android:text="Product version"
+                android:gravity="center"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/btn_option"
+                android:id="@+id/btn8_setting"
+                android:button="@null"
+                android:textColor="@color/btn_color_option"
+                android:textSize="@dimen/dp_12"
+                android:text="Factory"
+                android:gravity="center"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/btn_option"
+                android:id="@+id/btn9_setting"
+                android:button="@null"
+                android:textColor="@color/btn_color_option"
+                android:textSize="@dimen/dp_12"
+                android:text="Terminal Configuration"
+                android:gravity="center"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/btn_option"
+                android:id="@+id/btn10_setting"
+                android:button="@null"
+                android:textColor="@color/btn_color_option"
+                android:textSize="@dimen/dp_12"
+                android:text="Fan circulate time"
+                android:gravity="center"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/btn_option"
+                android:id="@+id/btn20_setting"
+                android:button="@null"
+                android:textColor="@color/btn_color_option"
+                android:textSize="@dimen/dp_12"
+                android:text="Alarm"
+                android:gravity="center"/>
+
+        </RadioGroup>
+
+    </ScrollView>
+
+    <FrameLayout
+        android:layout_width="@dimen/dp_600"
+        android:layout_height="@dimen/dp_400"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="@dimen/dp_20"
+        app:layout_constraintBottom_toTopOf="@+id/back_setting"
+        app:layout_constraintLeft_toRightOf="@+id/scr_setting"
+        android:id="@+id/frag_setting"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@mipmap/back"
+        android:id="@+id/back_setting"
+        android:layout_margin="@dimen/dp_10"/>
+
+</android.support.constraint.ConstraintLayout>

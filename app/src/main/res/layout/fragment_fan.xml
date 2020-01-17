@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.FanFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_fan"
+        android:textSize="@dimen/dp_14"
+        android:textColor="@color/textColor_option"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="@dimen/dp_48"
+        android:layout_marginTop="@dimen/dp_52"
+        android:id="@+id/title_fan"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/title_fan"
+        app:layout_constraintLeft_toLeftOf="@+id/title_fan"
+        android:layout_margin="@dimen/dp_20"
+        android:id="@+id/lin_fan">
+
+        <TextView
+            android:id="@+id/tv_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/slide_show"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+
+        <com.example.napolun2.customview.IndicatorSeekBar
+            android:layout_width="@dimen/dp_522"
+            android:layout_height="wrap_content"
+            android:max="60"
+            android:minHeight="@dimen/dp_10"
+            android:maxHeight="@dimen/dp_10"
+            android:thumb="@mipmap/slide_pin"
+            android:id="@+id/seekbar_fan"
+            android:progress="30"
+            android:progressDrawable="@drawable/seekbar" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/lin_fan"
+        app:layout_constraintLeft_toLeftOf="@+id/title_fan"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp_14"
+        android:id="@+id/zero_fan"
+        android:layout_marginTop="@dimen/dp_10"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/lin_fan"
+        app:layout_constraintRight_toRightOf="@+id/lin_fan"
+        android:text="60min/h"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp_14"
+        android:layout_marginTop="@dimen/dp_10"/>
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/zero_fan"
+        app:layout_constraintLeft_toLeftOf="@+id/title_fan"
+        android:text="当前风速：30"
+        android:textSize="@dimen/dp_16"
+        android:textColor="@color/textColor_option"
+        android:layout_marginTop="@dimen/dp_10"
+        android:id="@+id/show_fan"/>-->
+
+</android.support.constraint.ConstraintLayout>

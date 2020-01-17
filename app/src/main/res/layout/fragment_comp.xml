@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.CompFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compressor protection Delay"
+        android:textColor="@color/textColor_option"
+        android:textSize="@dimen/dp_14"
+        android:layout_marginTop="@dimen/dp_53"
+        android:layout_marginLeft="@dimen/dp_33"
+        android:id="@+id/text_comp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_112"
+        android:background="@mipmap/btn_bg"
+        android:src="@mipmap/minus_ok"
+        android:id="@+id/minus_comp"
+        android:layout_marginTop="@dimen/dp_90"/>
+
+    <TextView
+        android:id="@+id/min_comp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="249dp"
+        android:layout_marginLeft="249dp"
+        android:layout_marginTop="88dp"
+        android:text="1 min"
+        android:textColor="@color/textColor_option"
+        android:textSize="@dimen/dp_24" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/minus_comp"
+        android:layout_marginLeft="@dimen/dp_112"
+        android:background="@mipmap/btn_bg"
+        android:src="@mipmap/add_ok"
+        android:id="@+id/add_comp"
+        android:layout_marginTop="@dimen/dp_90"/>
+
+
+
+</RelativeLayout>

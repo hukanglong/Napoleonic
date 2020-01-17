@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.SystemFragment">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/group_system"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp_48"
+        android:layout_marginLeft="@dimen/dp_38">
+
+        <RadioButton
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="@dimen/dp_34"
+            android:text="1 Heat 1Cool"
+            android:textColor="@color/textColor_option"
+            android:textSize="@dimen/dp_14"
+            android:drawableLeft="@drawable/btn_system"
+            android:button="@null"
+            android:id="@+id/h1c1_system"/>
+
+        <RadioButton
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="@dimen/dp_34"
+            android:text="1 Heat 2Cool"
+            android:textColor="@color/textColor_option"
+            android:textSize="@dimen/dp_14"
+            android:drawableLeft="@drawable/btn_system"
+            android:button="@null"
+            android:id="@+id/h1c2_system"/>
+
+        <RadioButton
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="@dimen/dp_34"
+            android:text="2 Heat 1Cool"
+            android:textColor="@color/textColor_option"
+            android:textSize="@dimen/dp_14"
+            android:drawableLeft="@drawable/btn_system"
+            android:button="@null"
+            android:id="@+id/h2c1_system"/>
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_below="@+id/group_system"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/group2_system"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/dp_38">
+
+        <RadioButton
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="@dimen/dp_34"
+            android:text="2 Heat 2Cool"
+            android:textColor="@color/textColor_option"
+            android:textSize="@dimen/dp_14"
+            android:drawableLeft="@drawable/btn_system"
+            android:button="@null"
+            android:id="@+id/h2c2_system"/>
+
+        <RadioButton
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="@dimen/dp_34"
+            android:text="Inverter Type"
+            android:textColor="@color/textColor_option"
+            android:textSize="@dimen/dp_14"
+            android:drawableLeft="@drawable/btn_system"
+            android:button="@null"
+            android:id="@+id/inverter_system"/>
+
+    </RadioGroup>
+
+</RelativeLayout>

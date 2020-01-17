@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.VacActivity"
+    android:background="@color/backgroud"
+    android:id="@+id/con_vac">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/vacation_bg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/dp_42"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:id="@+id/rela_vac">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="On Vacation"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp_18"
+            android:layout_marginLeft="@dimen/dp_190"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dp_36"
+            android:textColor="@color/checked"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/days_bg"
+            android:text="30"
+            android:gravity="center"
+            android:id="@+id/days_vac"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/days_vac"
+            android:layout_marginLeft="@dimen/dp_100"
+            android:text="Days"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp_18"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/vacation_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/dp_14"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        app:layout_constraintTop_toBottomOf="@+id/rela_vac">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Target Temp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp_18"
+            android:layout_marginLeft="@dimen/dp_190"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dp_36"
+            android:textColor="@color/checked"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/days_bg"
+            android:text="26"
+            android:gravity="center"
+            android:id="@+id/temp_vac"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/temp_vac"
+            android:layout_marginLeft="@dimen/dp_100"
+            android:text="℃"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp_18"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@mipmap/back"
+        android:layout_margin="@dimen/dp_10"
+        android:id="@+id/back_vac"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Save"
+        android:textColor="@color/checked"
+        android:textSize="@dimen/dp_20"
+        android:layout_margin="@dimen/dp_10"
+        android:textAllCaps="false"
+        android:id="@+id/save_vac"/>
+
+</android.support.constraint.ConstraintLayout>

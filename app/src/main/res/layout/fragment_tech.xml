@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.TechFragment"
+    android:padding="@dimen/dp_30">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp_500"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/linebg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="@dimen/dp_28"
+        android:visibility="visible"
+        android:id="@+id/about2_ling_menu"
+        android:layout_marginTop="@dimen/dp_8">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Help &amp; Support"
+            android:textSize="@dimen/dp_16"
+            android:textColor="@color/textColor_line_menu"
+            android:layout_marginLeft="@dimen/dp_28"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="napoleon.com"
+            android:textSize="@dimen/dp_14"
+            android:textColor="@color/textColor_line_menu"
+            android:layout_marginLeft="@dimen/dp_282"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

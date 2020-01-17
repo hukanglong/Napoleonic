@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.HumFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable Humidification"
+        android:textSize="@dimen/dp_14"
+        android:textColor="@color/textColor_option"
+        app:layout_constraintTop_toTopOf="@+id/slideon_hum"
+        app:layout_constraintBottom_toBottomOf="@+id/slideon_hum"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="@dimen/dp_44"
+        android:id="@+id/title_hum"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/title_hum"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/dp_41"
+        android:text="ON"
+        android:textColor="@color/textColor_option"
+        android:textSize="@dimen/dp_14"
+        android:gravity="center"
+        android:background="@mipmap/slideon"
+        android:id="@+id/slideon_hum"
+        android:layout_marginLeft="@dimen/dp_10"/>
+
+    <View
+        android:layout_width="@dimen/dp_522"
+        android:layout_height="1dp"
+        app:layout_constraintLeft_toLeftOf="@+id/title_hum"
+        app:layout_constraintTop_toBottomOf="@+id/title_hum"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="#1FFFFFFF"
+        android:id="@+id/line_hum"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/line_hum"
+        app:layout_constraintLeft_toLeftOf="@+id/title_hum"
+        android:text="Humidify set point"
+        android:textSize="@dimen/dp_14"
+        android:textColor="@color/textColor_option"
+        android:layout_marginTop="@dimen/dp_21"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_50"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/line_hum"
+        app:layout_constraintLeft_toLeftOf="@+id/title_hum"
+        android:layout_margin="@dimen/dp_20"
+        android:id="@+id/lin_hum">
+
+        <TextView
+            android:id="@+id/tv_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/slide_show"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+
+        <com.example.napolun2.customview.IndicatorSeekBar
+            android:layout_width="@dimen/dp_522"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:minHeight="@dimen/dp_10"
+            android:maxHeight="@dimen/dp_10"
+            android:thumb="@mipmap/slide_pin"
+            android:id="@+id/seekbar_hum"
+            android:progress="50"
+            android:progressDrawable="@drawable/seekbar" />
+
+    </LinearLayout>
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/seekbar_hum"
+        app:layout_constraintLeft_toLeftOf="@+id/title_hum"
+        android:text="当前湿度：50%"
+        android:textSize="@dimen/dp_16"
+        android:textColor="@color/textColor_option"
+        android:layout_marginTop="@dimen/dp_10"
+        android:id="@+id/show_hum"/>-->
+
+</android.support.constraint.ConstraintLayout>

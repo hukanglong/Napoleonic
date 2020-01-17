@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.SleepFragment"
+    android:background="@color/back_head">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp_500"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/linebg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="@dimen/dp_28"
+        android:layout_marginTop="@dimen/dp_8"
+        android:visibility="visible"
+        android:id="@+id/sleep_ling_menu">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Sleep Mode"
+            android:textSize="@dimen/dp_14"
+            android:textColor="@color/textColor_line_menu"
+            android:layout_marginLeft="@dimen/dp_28"
+            android:visibility="visible"
+            android:id="@+id/title_sleep_menu"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/off"
+            android:id="@+id/group_sleep_frag"
+            android:orientation="horizontal"
+            android:layout_marginRight="@dimen/dp_24">
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:text="OFF"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dp_14"
+                android:gravity="center"
+                android:id="@+id/off_sleep_frag"
+                android:layout_marginRight="@dimen/dp_50"/>
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:text="ON"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dp_14"
+                android:gravity="center"
+                android:id="@+id/on_sleep_frag"/>
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/sleep_ling_menu"
+        app:layout_constraintRight_toRightOf="@+id/sleep_ling_menu"
+        app:layout_constraintTop_toBottomOf="@+id/sleep_ling_menu"
+        android:text="The display will be black when the screen is in sleep mode"
+        android:textColor="@color/textColor_line_menu"
+        android:textSize="@dimen/dp_14"
+        android:layout_marginTop="@dimen/dp_10"
+        android:id="@+id/hint_menu"
+        android:visibility="visible"/>
+
+</android.support.constraint.ConstraintLayout>

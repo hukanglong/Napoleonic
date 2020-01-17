@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="backgroud">#0e0e1a</color>
+    <color name="white">#FFFFFF</color>
+    <color name="incanus">#B0B1B6</color>
+    <color name="checked">#4FF5EB</color>
+    <color name="back_head">#14151A</color>
+    <color name="textColor_head">#54B6FA</color>
+    <color name="bg_test">#8054B6FA</color>
+    <color name="textColor_menu">#B0B1B6</color>
+    <color name="textColor_line_menu">#FFFFFF</color>
+    <color name="textColor_time">#646566</color>
+    <color name="textColor_ok">#2C2D2D</color>
+    <color name="lineColor_ok">#D6DADC</color>
+    <color name="textColor_option">#CACBD2</color>
+    <color name="bg_popu">#424343</color>
+    <color name="line_popu">#CAC6C6</color>
+    <color name="black">#000000</color>
+    <color name="seer_item">#FFCC99</color>
+</resources>
